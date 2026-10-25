@@ -17,14 +17,27 @@
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
-    ".expo/types/**/*.ts",
+    "app/**/*.ts",
+    "app/**/*.tsx",
+    "components/**/*.ts",
+    "components/**/*.tsx",
+    "hooks/**/*.ts",
+    "hooks/**/*.tsx",
+    "lib/**/*.ts",
+    "lib/**/*.tsx",
+    "*.config.ts",
+    "*.config.tsx",
     "expo-env.d.ts",
     "nativewind-env.d.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "dist",
+    "server",
+    "_core",
+    "drizzle",
+    "shared",
+    "**/*.test.ts",
+    "**/*.test.tsx"
   ]
 }
